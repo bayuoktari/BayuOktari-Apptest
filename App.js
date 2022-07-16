@@ -1,11 +1,18 @@
 import React from 'react';
-import {Text, ScrollView} from 'react-native';
+import * as eva from '@eva-design/eva';
+import {ApplicationProvider, Layout, Text} from '@ui-kitten/components';
 
 export default function App() {
   return (
-    <ScrollView>
-      <Text>Hello World</Text>
-      <Text>Apa Kabar</Text>
-    </ScrollView>
+    <ApplicationProvider {...eva} theme={eva.light}>
+      <Layout
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <Text category="h1">HOME</Text>
+      </Layout>
+    </ApplicationProvider>
   );
 }
