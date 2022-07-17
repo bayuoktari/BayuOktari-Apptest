@@ -1,9 +1,9 @@
 import { Spinner } from '@ui-kitten/components';
 import React, { useEffect } from 'react';
-import { View, Image, StyleSheet, ImageBackground, Text } from 'react-native';
+import { View, Image, StyleSheet, ImageBackground } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { getContactDetail } from '../store/reducers/contactSlice';
-import { Button } from '@ui-kitten/components';
+import { Button, Text } from '@ui-kitten/components';
 
 const Detail = ({ navigation, route }) => {
   const dispatch = useDispatch();

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { View, StyleSheet, Image, Text, TouchableOpacity } from 'react-native';
-import { Button, Icon, Modal, Card } from '@ui-kitten/components';
+import { View, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { Button, Icon, Modal, Card, Text } from '@ui-kitten/components';
 
 const ContactItem = ({ contact, deleteItem, handleNavigation }) => {
   const EditIcon = props => <Icon {...props} name="edit" />;
