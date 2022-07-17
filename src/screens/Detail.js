@@ -62,7 +62,7 @@ const Detail = ({ navigation, route }) => {
               <Button
                 style={styles.buttonBack}
                 onPress={() => {
-                  navigation.goBack();
+                  navigation.navigate('Home');
                 }}>
                 Back to Contact List
               </Button>
